@@ -18,7 +18,7 @@ wordList = ["a", "akesi", "ala", "alasa", "ale", "anpa", "ante", "anu", "awen", 
             "kijetesantakalu", "soko", "meso", "epiku", "kokosila", "lanpan", "n", "misikeke", "ku", None, None, None, None, None, None, None,
             "[", "]", "_", None, None, None, None, None, None, None, None, None, None, None, None, None,
             "pake", "apeja", "majuna", "powe", None, None, None, None, None, None, None, None, None, None, None, None]
-#I wanted to put words into cartoushes, and it kind of works, but i don't know how, and it tries to translate stuff like OpenGL so I cmmented it
+#I wanted to put words into cartoushes, and it kind of works, but i don't know how, and it tries to translate stuff like OpenGL so I commented it
 '''
 def acro(ch):
     print(ch)
@@ -59,7 +59,7 @@ def t(txt):
         elif word.isupper():
             if word.lower() in wordList: out+=space+chr(0xF1900 + wordList.index(word.lower()))
             else: out+=space+word
-        #sometimes else just happens :(
+        #sometimes else just happens for some reason:(
         else:
             out+=space+word
     return out
