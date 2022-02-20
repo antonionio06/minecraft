@@ -1,0 +1,13 @@
+{
+   "pack": {
+      "pack_format": 8,
+      "description": "sitelen pona for minecraft 1.18 (Optifine required)"
+   },
+   "language": {
+      "tok_sp": {
+         "name": "󱥬󱥔",
+         "region": "󱤰󱥔",
+         "bidirectional": false
+      }
+   }
+}
