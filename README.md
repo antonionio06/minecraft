@@ -2,5 +2,8 @@ This resource pack replaces all the minecraft toki pona translations with sitele
 It's quite buggy, so feel free to modify it.
 To display the translation select toki pona in languages (it'll be written in sitelen pona)
 Font used - Fairfax.
-Also, I don't know why does this resourcepack require optifine, maybe it has something to do witth the fact, that Fairfax is 15 times larger than linja sike or something.
+Known issues:
+-For some reason it requires optifine, even though, usually resourcepacks changing fonts don't.
+-The glyph COMBINING CARTOUCHE EXTENSION is for some reason shifted by one character to the left, making cartouches render incorrectly.
+
 -jan Ate
