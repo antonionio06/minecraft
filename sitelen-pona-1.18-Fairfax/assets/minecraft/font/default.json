@@ -2,11 +2,10 @@
     "providers": [
         {
             "type": "ttf",
-            "file": "minecraft:Fairfax.ttf",
-			"ascent": 5,
-			"shift": [0, 0.5],
+            "file": "Fairfax.ttf",
+
 			"size": 12.0,
-			"oversample": 4.0
+			"oversample": 1.0
         }
 	]
 }

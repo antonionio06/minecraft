@@ -18,7 +18,8 @@ wordList = ["a", "akesi", "ala", "alasa", "ale", "anpa", "ante", "anu", "awen", 
             "kijetesantakalu", "soko", "meso", "epiku", "kokosila", "lanpan", "n", "misikeke", "ku", None, None, None, None, None, None, None,
             "[", "]", "_", None, None, None, None, None, None, None, None, None, None, None, None, None,
             "pake", "apeja", "majuna", "powe", None, None, None, None, None, None, None, None, None, None, None, None]
-#I wanted to put words into cartoushes, and it kind of works, but i don't know how, and it tries to translate stuff like OpenGL so I commented it
+#I wanted to put words into cartouches, and it kind of works, but i don't know how, and it tries to translate stuff like OpenGL so I commented it
+#also for some reason the COMBINING CARTOUCHE EXTENSION glyph is shifted one character to the left and I have no idea why.
 '''
 def acro(ch):
     print(ch)
@@ -29,7 +30,7 @@ def acro(ch):
                 nimi+=[word]
     if len(nimi)==0: return ch
     return chr(0xf1900+wordList.index(nimi[0]))
-def cartushe(word):
+def cartouche(word):
     out=chr(0xf1990)
     for ch in word:
         out+=acro(ch)
@@ -59,7 +60,7 @@ def t(txt):
         elif word.isupper():
             if word.lower() in wordList: out+=space+chr(0xF1900 + wordList.index(word.lower()))
             else: out+=space+word
-        #sometimes else just happens for some reason:(
+        #sometimes else just happens :(
         else:
             out+=space+word
     return out
